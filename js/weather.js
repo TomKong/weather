@@ -67,9 +67,7 @@ $(function() {
 				overflow: "auto"
 			});
 		});
-		// $(".box").on("touchmove",function(event){
-		// 	event.preventDefault();
-		// });
+		
 		$(".w-meun").animate({
 			bottom: 0
 		});

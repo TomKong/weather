@@ -8,60 +8,65 @@
 	<link rel="stylesheet" href="css/weather.css">
 	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
 
-<script src="js/weather.js"></script>
+	<script src="js/weather.js"></script>
 </head>
 <body>
-<div class="main">
-	<div class="city">
-	  <span class="glyphicon glyphicon-map-marker"></span>
-	  <span id="w-city">广州</span>
+	<div class="main">
+		<div class="city">
+			<span class="glyphicon glyphicon-map-marker"></span>
+			<span id="w-city">广州</span>
+		</div>
+		<div class="wendu">25</div>
+		<p>
+			<span id="type">多云</span>
+			<span>|</span>
+			<span id="day">星期天</span>
+		</p>
+		<div class="null-div"></div>
+		<div class="w-row">
+			<div class="w-col">
+				<p id="fengxiang">北风</p>
+				<p id="fengli">3级</p>
+			</div>
+			<div class="w-col">
+				<p>最高温度</p>
+				<p id="high">3级</p>
+			</div>
+			<div class="w-col">
+				<p>最低温度</p>
+				<p id="low">3级</p>
+			</div>
+		</div>
 	</div>
-	<div class="wendu">25</div>
-	<p><span id="type">多云</span><span>|</span><span id="day">星期天</span></p>
-	<div class="null-div"></div>
-	<div class="w-row">
-	  <div class="w-col">
-	    <p id="fengxiang">北风</p>
-	    <p id="fengli">3级</p>
-	  </div>
-	  <div class="w-col">
-	    <p>最高温度</p>
-	    <p id="high">3级</p>
-	  </div>
-	  <div class="w-col">
-	  	<p>最低温度</p>
-	    <p id="low">3级</p>
-	  </div>
+	<div class="three-day"></div>
+	<div class="ganmao">
+		<h4>
+			<span class="glyphicon glyphicon-tree-deciduous" style="color: lightgreen;"></span>
+			天气小贴士
+		</h4>
+		<p class="tips"></p>
 	</div>
-</div>
-<div class="three-day">
-	
-</div>
-<div class="ganmao">
-  <h4><span class="glyphicon glyphicon-tree-deciduous" style="color: lightgreen;"></span>天气小贴士</h4>
-  <p class="tips"></p>
-</div>
-<div class="foot-box"></div>
+	<div class="foot-box"></div>
 
-<div class="w-foot">
-	<a href="JavaScript:;"><span class="glyphicon glyphicon-align-justify"></span></a>
-</div>
+	<div class="w-foot">
+		<a href="JavaScript:;">
+			<span class="glyphicon glyphicon-align-justify"></span>
+		</a>
+	</div>
 
-
-<div class="w-meun">
-   <div class="w-row">
-   		<div class="w-input">
-   		  <input type="text">
-   		</div>
-   		<div class="w-btn">
-			<button>取消</button>
-   		</div>
-   </div>
-   <div class="w-row">
-     <div class="w-col list">
-     	<ul class="ul"></ul>
-     </div>
-   </div>
-</div>
+	<div class="w-meun">
+		<div class="w-row">
+			<div class="w-input">
+				<input type="text"></div>
+			<div class="w-btn">
+				<button>取消</button>
+			</div>
+		</div>
+		<div class="w-row">
+			<div class="w-col list">
+				<ul class="ul"></ul>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
