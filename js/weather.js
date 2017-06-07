@@ -23,7 +23,7 @@ $(function() {
 					$("#w-city").html(data.data.city);
 					$(".wendu").html(data.data.wendu);
 					$("#type").html(data.data.forecast[0].type);
-					$("#day").html(data.data.forecast[0].date.substring(3));
+					$("#day").html(data.data.forecast[0].date);
 
 					$("#fengxiang").html(data.data.forecast[0].fengxiang);
 					$("#fengli").html(data.data.forecast[0].fengli);
@@ -31,7 +31,7 @@ $(function() {
 					$("#low").html(data.data.forecast[0].low.substring(3));
 					$(".three-day").empty();
 					for (var i = 1; i < 5; i++) {
-						var div = $('<div class="w-row"><div class="w-col">' + data.data.forecast[i].date.substring(2) + '</div><div class="w-col">' + data.data.forecast[i].type + '</div><div class="w-col">' + data.data.forecast[i].low.substring(3) + '/' + data.data.forecast[i].high.substring(3) + '</div></div>');
+						var div = $('<div class="w-row"><div class="w-col">' + data.data.forecast[i].date + '</div><div class="w-col">' + data.data.forecast[i].type + '</div><div class="w-col">' + data.data.forecast[i].low.substring(3) + '/' + data.data.forecast[i].high.substring(3) + '</div></div>');
 						$(".three-day").append(div);
 
 					}
